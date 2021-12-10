@@ -1,0 +1,148 @@
+                    /*fuentes*/
+                    
+                    @import url('https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400;700&display=swap');
+                    /*TODO*/
+                    /*variables*/
+                    
+                     :root {
+                        --header-height: 3rem;
+                        /*colores*/
+                        --body-color: #314E52;
+                        --grey: #A1A09B;
+                        --white: #F7F6E7;
+                        --first-contrast-color: #F2A154;
+                        --second-contrast-color: #E25454;
+                        --third-contrast-color: #F2A154;
+                        --fourth-contrast-color: #F2A154;
+                        --fifth-contrast-color: #F2A154;
+                        /*fuentes */
+                        --body-font: 'Reem Kufi', sans-serif;
+                        /*tamaño*/
+                        --big-font-size: 2rem;
+                        --normal-font-size: .938rem;
+                        --small-font-size: .813rem;
+                        --smaller-font-size: 75rem;
+                        --h1-font-size: 1.5rem;
+                        --h2-font-size: 1.25rem;
+                        --h3-font-size: 1.125rem;
+                        /*ancho*/
+                        --font-regular: 400;
+                        --font-semi-bold: 700;
+                        /*margenes botones*/
+                        --mb-0-25: .25rem;
+                        --mb-0-5: .5rem;
+                        --mb-0-75: .75rem;
+                        --mb-1: 1rem;
+                        --mb-1-5: 1.5rem;
+                        --mb-2: 2rem;
+                        --mb-2-5: 2.5rem;
+                        --mb-3: 3rem;
+                        /*z-index*/
+                        --z-tooltip: 10;
+                        --z-fixed: 100;
+                        --z-modal: 1000;
+                    }
+                    /*dispositivos grandes*/
+                    
+                    @media screen and (min-width: 968px) {
+                         :root {
+                            --big-font-size: 3rem;
+                            --normal-font-size: 1rem;
+                            --small-font-size: .875rem;
+                            --smaller-font-size: 813rem;
+                            --h1-font-size: 2.25rem;
+                            --h2-font-size: 1.5rem;
+                            --h3-font-size: 1.25rem;
+                        }
+                    }
+                    /*base*/
+                    
+                    * {
+                        box-sizing: border-box;
+                        padding: 0;
+                        margin: 0;
+                    }
+                    
+                    html {
+                        scroll-behavior: smooth;
+                    }
+                    
+                    body {
+                        margin: 0 0 var(--header-height) 0;
+                        font-family: var(--body-font);
+                        font-size: var(--normal-font-size);
+                        background-color: var(--body-color);
+                        color: var(--white);
+                    }
+                    
+                    img {
+                        max-width: 100%;
+                        height: auto;
+                    }
+                    /*clases css reusables*/
+                    
+                    #home-section {
+                        height: 100vh;
+                        width: 100vh;
+                    }
+                    
+                    #father-div {
+                        width: 80%;
+                        margin-top: 7%;
+                        margin-bottom: 30%;
+                    }
+                    
+                    div {
+                        border-color: var(--grey);
+                        border: 7px;
+                        border-radius: 1.5%;
+                        -webkit-border-radius: 1.5%;
+                        -moz-border-radius: 1.5%;
+                        -ms-border-radius: 1.5%;
+                        -o-border-radius: 1.5%;
+                    }
+                    
+                    #hour {
+                        width: 90%;
+                        background: #000;
+                        /*TODO eliminar esto*/
+                    }
+                    
+                    #today {
+                        width: 90%;
+                        background: #000;
+                        /*TODO eliminar esto*/
+                    }
+                    
+                    #morning {
+                        width: 90%;
+                        background: #000;
+                        /*TODO eliminar esto*/
+                    }
+                    
+                    .bg-contrast {
+                        background-color: var(--first-contrast-color)
+                    }
+                    
+                    .progress {
+                        height: 2rem;
+                        background-color: var(--white)
+                    }
+                    
+                    ul {
+                        list-style-type: none;
+                        text-align: center
+                    }
+                    
+                    li {
+                        display: inline;
+                        margin-right: 80%;
+                        margin-top: 1.5rem;
+                        margin-bottom: 1.5rem;
+                        color: #F2A154;
+                        font-size: var(--h2-font-size);
+                    }
+                    
+                    .invisible-text {
+                        color: rgba(255, 0, 0, 0);
+                    }
